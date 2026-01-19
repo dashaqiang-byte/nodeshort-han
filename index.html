@@ -53,9 +53,12 @@
       border-bottom:1px solid rgba(255,255,255,.04);
     }
     .nav{display:flex;justify-content:space-between;align-items:center;gap:16px}
-    .nav-left{display:flex;align-items:center;gap:10px}
+    .nav-left{display:flex;align-items:center;gap:12px;flex:1;min-width:0}
+    .nav-actions{display:flex;gap:10px;align-items:center;flex:2;justify-content:flex-end}
+    .brand-mark{display:block;height:34px;width:auto;max-width:33vw;object-fit:contain}
+    @media(max-width:480px){.brand-mark{height:30px;max-width:38vw}}
     .pill{font-size:11px;padding:2px 8px;border-radius:999px;border:1px solid rgba(246,196,83,.5);color:var(--brand);background:rgba(246,196,83,.08)}
-    .nav-actions{display:flex;gap:10px;align-items:center}
+    
 
     /* buttons */
     .btn{padding:9px 16px;border-radius:999px;cursor:pointer;border:1px solid var(--line);background:transparent;color:var(--text);min-height:36px;display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:14px;font-weight:600;}
@@ -216,7 +219,7 @@
   <header class="header">
     <div class="container nav">
       <div class="nav-left">
-        <img src="assets/nodeshort-logo.png" alt="NodeShort" width="44" height="44" style="display:block" />
+        <img class="brand-mark" src="assets/nodeshort-wordmark.png" alt="NodeShort" />
         
       </div>
       <div class="nav-actions">
