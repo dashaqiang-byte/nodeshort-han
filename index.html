@@ -156,7 +156,10 @@
       .tval{font-size:22px}
     }
     @media(max-width:600px){
-      .nav-actions{display:none}
+      /* 手机端保留顶部按钮：缩小尺寸以适配窄屏 */
+      .nav-actions{display:flex;gap:8px}
+      .btn{padding:7px 12px;min-height:32px;font-size:13px}
+      .btn span.icon{font-size:14px}
     }
     @media(max-width:480px){
       body{font-size:15px}
@@ -167,13 +170,28 @@
       .hero-sub{font-size:12px}
       .kpi{font-size:12px}
       #cta-floating{width:calc(100% - 24px);font-size:13px;padding:9px 12px}
-      .pill{display:none}
-      /* 极小屏：倒计时改为 2x2，避免溢出 */
-      .timer{grid-template-columns:repeat(2,minmax(0,1fr))}
-      .tval{font-size:20px}
+
+      /* 顶部导航在超小屏继续保留按钮，但进一步压缩 */
+      .nav{gap:10px}
+      .nav-actions{gap:8px;flex-wrap:nowrap}
+      .btn{padding:6px 10px;min-height:30px;font-size:12px}
+
+      /* 倒计时保持一排 4 个：缩小间距与字号，避免换行 */
+      .timer{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+      .tbox{padding:10px;border-radius:16px}
+      .tval{font-size:18px}
+      .tlabel{font-size:10px}
+    }
     }
     @media(max-width:360px){
-      .btn{width:100%}
+      .btn{padding:6px 9px}
+      .hero-cta-row{align-items:stretch}
+      .hero-cta-row .textlink{display:inline-block;padding:8px 2px}
+      /* 360px 以内倒计时仍一排：再压一点 */
+      .timer{gap:6px}
+      .tbox{padding:8px}
+      .tval{font-size:16px}
+    }
       .hero-cta-row{align-items:stretch}
       .hero-cta-row .textlink{display:inline-block;padding:8px 2px}
     }
