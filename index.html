@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="zh" data-theme="dark">
+<html lang="vi" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>NodeShort · 会员权益福利活动</title>
-  <meta name="description" content="会员专属礼品（实物邮寄）· 每日限量 500 份 · 每个账号仅限 1 份 · 点击注册后联系客服领取" />
+  <title>NodeShort · Quà tặng dành riêng cho thành viên</title>
+  <meta name="description" content="Quà tặng dành riêng cho thành viên (gửi hàng tận nơi) · Giới hạn 500 suất/ngày · Mỗi tài khoản chỉ 1 lần · Đăng ký và liên hệ CSKH để nhận quà" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="NodeShort · 会员权益福利活动" />
-  <meta property="og:description" content="会员专属礼品（实物邮寄）· 每日限量 500 份 · 每个账号仅限 1 份 · 点击注册后联系客服领取" />
+  <meta property="og:title" content="NodeShort · Quà tặng dành riêng cho thành viên" />
+  <meta property="og:description" content="Quà tặng dành riêng cho thành viên · Giới hạn 500 suất/ngày · Mỗi tài khoản chỉ 1 lần · Đăng ký & liên hệ CSKH để nhận quà" />
   <meta property="og:image" content="assets/nodeshort-og-1200x630.png" />
   <meta property="og:url" content="https://www.nodeshort.com" />
   <meta name="theme-color" content="#0b1020" />
@@ -38,7 +38,6 @@
     }
     a{text-decoration:none;color:inherit}
     .container{max-width:1180px;margin:0 auto;padding:20px 20px 28px;width:100%}
-    /* 避免任何元素导致横向溢出 */
     img,svg,video,canvas{max-width:100%;height:auto}
     .hero-grid,.section-inner,.grid-3,.grid-2,.steps-grid{min-width:0}
     .card,.step-card,.countdown-card,.tbox{min-width:0}
@@ -56,9 +55,6 @@
     .nav-left{display:flex;align-items:center;gap:12px;flex:1;min-width:0}
     .nav-actions{display:flex;gap:10px;align-items:center;flex:2;justify-content:flex-end}
     .brand-mark{display:block;height:34px;width:auto;max-width:33vw;object-fit:contain}
-    @media(max-width:480px){.brand-mark{height:30px;max-width:38vw}}
-    .pill{font-size:11px;padding:2px 8px;border-radius:999px;border:1px solid rgba(246,196,83,.5);color:var(--brand);background:rgba(246,196,83,.08)}
-    
 
     /* buttons */
     .btn{padding:9px 16px;border-radius:999px;cursor:pointer;border:1px solid var(--line);background:transparent;color:var(--text);min-height:36px;display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:14px;font-weight:600;}
@@ -89,17 +85,15 @@
     .kpi b{color:var(--brand)}
 
     .hero-cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:8px}
-    .hero-note{font-size:12px;color:var(--muted);margin-top:8px}
 
     /* countdown */
     .countdown-card{border-radius:26px;background:radial-gradient(circle at top,#202749,#090b1a);padding:16px 14px;border:1px solid rgba(148,163,255,.35);box-shadow:var(--shadow)}
     .countdown-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-size:12px;color:var(--muted)}
     .tag-soft{padding:3px 8px;border-radius:999px;background:rgba(15,23,42,.9);border:1px solid rgba(148,163,255,.45);font-size:11px;color:#c7d2fe}
-    .timer{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:8px}
+    .timer{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:8px}
     .tbox{background:rgba(15,23,42,.75);border:1px solid rgba(148,163,255,.22);border-radius:18px;padding:12px;text-align:center}
     .tval{font-size:26px;font-weight:900;line-height:1.1;color:#fff}
     .tlabel{font-size:11px;color:var(--muted);margin-top:4px}
-    .timer-sub{margin-top:10px;font-size:12px;color:var(--muted)}
 
     /* sections */
     .section{padding:14px 20px 6px}
@@ -108,16 +102,10 @@
     .section-sub{margin:0 0 16px;font-size:13px;color:var(--muted)}
 
     .grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-    .grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 
     .card{background:linear-gradient(145deg,var(--card-soft),#111628);border:1px solid var(--line);padding:16px;border-radius:var(--radius-lg);box-shadow:0 14px 40px rgba(15,23,42,.9)}
     .card h3{margin:0 0 8px;font-size:16px}
     .meta-line{font-size:12px;color:var(--muted);margin-bottom:8px}
-
-    .bigline{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:8px 0}
-    .bigline .label{font-size:13px;color:var(--muted)}
-    .bigline .value{font-size:20px;font-weight:900;color:var(--brand)}
-
     .list{margin:6px 0 0;padding-left:18px;font-size:13px;color:var(--muted);line-height:1.65}
 
     /* steps */
@@ -151,7 +139,7 @@
     @media(max-width:900px){
       .hero{padding-top:18px;padding-bottom:4px}
       .hero-grid{grid-template-columns:1fr;gap:18px}
-      .grid-3,.grid-2,.steps-grid{grid-template-columns:1fr}
+      .grid-3,.steps-grid{grid-template-columns:1fr}
       .container{padding-inline:16px}
       .section{padding-inline:16px}
       .hero-title{font-size:22px}
@@ -159,7 +147,6 @@
       .tval{font-size:22px}
     }
     @media(max-width:600px){
-      /* 手机端保留顶部按钮：缩小尺寸以适配窄屏 */
       .nav-actions{display:flex;gap:8px}
       .btn{padding:7px 12px;min-height:32px;font-size:13px}
       .btn span.icon{font-size:14px}
@@ -174,33 +161,28 @@
       .kpi{font-size:12px}
       #cta-floating{width:calc(100% - 24px);font-size:13px;padding:9px 12px}
 
-      /* 顶部导航在超小屏继续保留按钮，但进一步压缩 */
       .nav{gap:10px}
       .nav-actions{gap:8px;flex-wrap:nowrap}
       .btn{padding:6px 10px;min-height:30px;font-size:12px}
 
-      /* 倒计时保持一排 4 个：缩小间距与字号，避免换行 */
+      .brand-mark{height:30px;max-width:38vw}
+
       .timer{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
       .tbox{padding:10px;border-radius:16px}
       .tval{font-size:18px}
       .tlabel{font-size:10px}
     }
-    }
     @media(max-width:360px){
       .btn{padding:6px 9px}
       .hero-cta-row{align-items:stretch}
       .hero-cta-row .textlink{display:inline-block;padding:8px 2px}
-      /* 360px 以内倒计时仍一排：再压一点 */
       .timer{gap:6px}
       .tbox{padding:8px}
       .tval{font-size:16px}
     }
-      .hero-cta-row{align-items:stretch}
-      .hero-cta-row .textlink{display:inline-block;padding:8px 2px}
-    }
   </style>
 
-  <!-- Meta Pixel（可用；若要 TikTok Pixel 也可在此处加入） -->
+  <!-- Meta Pixel (giữ nguyên) -->
   <script>
   !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -220,11 +202,10 @@
     <div class="container nav">
       <div class="nav-left">
         <img class="brand-mark" src="assets/nodeshort-wordmark.png" alt="NodeShort" />
-        
       </div>
       <div class="nav-actions">
-        <a class="btn secondary" href="https://zalo.me/g/neypmn605" target="_blank" rel="noopener noreferrer" onclick="trackCTA('top_zalo')">加入社区</a>
-        <a class="btn primary" href="https://nodeshort.com/pages/register?code=2162846" target="_blank" rel="noopener noreferrer" onclick="trackCTA('top_primary')"><span class="icon">⚡</span>立即进入领取</a>
+        <a class="btn secondary" href="https://zalo.me/g/neypmn605" target="_blank" rel="noopener noreferrer" onclick="trackCTA('top_zalo')">Vào cộng đồng</a>
+        <a class="btn primary" href="https://nodeshort.com/pages/register?code=2162846" target="_blank" rel="noopener noreferrer" onclick="trackCTA('top_primary')"><span class="icon">⚡</span>Nhận quà ngay</a>
       </div>
     </div>
   </header>
@@ -233,112 +214,108 @@
   <section class="hero">
     <div class="container hero-grid">
       <div>
-        <div class="eyebrow">🎁 NodeShort 会员权益福利活动</div>
+        <div class="eyebrow">🎁 Ưu đãi dành riêng cho thành viên NodeShort</div>
         <h1 class="hero-title">
-          会员专属礼品 · <span class="hero-highlight">限时领取</span>
+          Quà tặng độc quyền · <span class="hero-highlight">Nhận trong thời gian có hạn</span>
         </h1>
         <p class="hero-sub">
-          符合条件的会员可领取 <b>1 份</b> 专属礼品（实物邮寄）。
-          <b>每日限量 500 份</b>，领完即止。
+          Thành viên đủ điều kiện có thể nhận <b>1</b> phần quà (gửi hàng tận nơi).
+          <b>Giới hạn 500 suất/ngày</b>, hết là dừng.
         </p>
 
         <div class="kpis">
-          <div class="kpi">✅ 参与资格：<b>徽章会员</b> 或 <b>VIP（月/季/年）</b></div>
-          <div class="kpi">🎯 每个账号（ID）仅限 <b>1</b> 份</div>
-          <div class="kpi">⏱ 审核周期：<b>24 小时内</b></div>
+          <div class="kpi">✅ Điều kiện: <b>Thành viên Huy hiệu</b> hoặc <b>VIP (tháng/quý/năm)</b></div>
+          <div class="kpi">🎯 Mỗi tài khoản (ID): <b>1</b> lần</div>
+          <div class="kpi">⏱ Duyệt: <b>trong 24 giờ</b></div>
         </div>
 
         <div class="hero-cta-row">
           <a class="btn primary" href="https://nodeshort.com/pages/register?code=2162846" target="_blank" rel="noopener noreferrer" onclick="trackCTA('hero_primary')">
-            <span class="icon">🚀</span>立即进入领取
+            <span class="icon">🚀</span>Nhận quà ngay
           </a>
           <a class="textlink" href="https://zalo.me/g/neypmn605" target="_blank" rel="noopener noreferrer" onclick="trackCTA('hero_zalo')">
-            加入社区（Zalo 群） →
+            Vào cộng đồng (Zalo) →
           </a>
         </div>
-
-        
       </div>
 
-      <!-- 倒计时 -->
-      <div class="countdown-card" aria-label="活动倒计时">
+      <!-- COUNTDOWN -->
+      <div class="countdown-card" aria-label="Đếm ngược chương trình">
         <div class="countdown-head">
-          <span>⏳ 活动倒计时</span>
-          <span class="tag-soft">截止：2026/01/31 23:59</span>
+          <span>⏳ Đếm ngược</span>
+          <span class="tag-soft">Hết hạn: 23:59 · 31/01/2026</span>
         </div>
         <div class="timer" id="timer">
-          <div class="tbox"><div class="tval" id="d">—</div><div class="tlabel">天</div></div>
-          <div class="tbox"><div class="tval" id="h">—</div><div class="tlabel">小时</div></div>
-          <div class="tbox"><div class="tval" id="m">—</div><div class="tlabel">分钟</div></div>
-          <div class="tbox"><div class="tval" id="s">—</div><div class="tlabel">秒</div></div>
+          <div class="tbox"><div class="tval" id="d">—</div><div class="tlabel">Ngày</div></div>
+          <div class="tbox"><div class="tval" id="h">—</div><div class="tlabel">Giờ</div></div>
+          <div class="tbox"><div class="tval" id="m">—</div><div class="tlabel">Phút</div></div>
+          <div class="tbox"><div class="tval" id="s">—</div><div class="tlabel">Giây</div></div>
         </div>
-        
       </div>
     </div>
   </section>
 
-  <!-- 活动一：礼品福利 -->
+  <!-- QUÀ TẶNG -->
   <section class="section">
     <div class="section-inner">
-      <h2 class="section-title">🎁 福利内容</h2>
-      
+      <h2 class="section-title">🎁 Nội dung quà tặng</h2>
 
       <div class="grid-3">
         <article class="card">
-          <h3>礼品池</h3>
-          <p class="meta-line">礼品样式以实际发放为准，具体礼品图片请联系客服获取</p>
+          <h3>Kho quà</h3>
+          <p class="meta-line">Mẫu quà tặng theo thực tế phát; hình ảnh cụ thể vui lòng liên hệ CSKH để nhận ảnh</p>
           <ul class="list">
-            <li>精选生活小物</li>
-            <li>实用家居好物</li>
-            <li>创意摆件 / 装饰礼品</li>
-            <li>人气电子周边</li>
+            <li>Đồ dùng tiện ích hằng ngày</li>
+            <li>Đồ gia dụng thiết thực</li>
+            <li>Đồ trang trí / quà tặng sáng tạo</li>
+            <li>Phụ kiện điện tử phổ biến</li>
           </ul>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- 三步流程（强化） -->
+  <!-- 3 STEPS -->
   <section class="section">
     <div class="section-inner">
-      <h2 class="section-title">3 步完成领取</h2>
-      <p class="section-sub">为了减少等待，请按步骤操作。若遇到领取失败或资格异常，请直接联系站内客服处理。</p>
+      <h2 class="section-title">3 bước để nhận quà</h2>
+      <p class="section-sub">Để xử lý nhanh, vui lòng làm theo hướng dẫn. Nếu gặp lỗi/không đủ điều kiện, hãy liên hệ CSKH trong app để được hỗ trợ.</p>
       <div class="steps-grid">
         <div class="step-card">
-          <div class="step-index">STEP 1</div>
-          <h3>打开官网并登录</h3>
-          <p>从本页点击「立即进入领取」，进入 NodeShort 官方网站 / H5 并登录账号。</p>
+          <div class="step-index">BƯỚC 1</div>
+          <h3>Vào website và đăng nhập</h3>
+          <p>Nhấn “Nhận quà ngay” để vào NodeShort và đăng nhập tài khoản.</p>
         </div>
         <div class="step-card">
-          <div class="step-index">STEP 2</div>
-          <h3>点击站内「联系客服」提交领取</h3>
-          <p>礼品领取入口位于站内「联系客服」按钮处，按客服提示提交领取申请。</p>
+          <div class="step-index">BƯỚC 2</div>
+          <h3>Nhấn “Liên hệ CSKH” để đăng ký nhận</h3>
+          <p>Lối vào nhận quà nằm ở nút “Liên hệ CSKH” trong hệ thống. Làm theo hướng dẫn của CSKH.</p>
         </div>
         <div class="step-card">
-          <div class="step-index">STEP 3</div>
-          <h3>与客服对接填写收货信息</h3>
-          <p>按客服要求填写收货信息，审核通过后24小时内安排邮寄。</p>
+          <div class="step-index">BƯỚC 3</div>
+          <h3>Xác nhận thông tin nhận hàng</h3>
+          <p>Cung cấp thông tin nhận hàng theo yêu cầu CSKH. Duyệt xong sẽ sắp xếp gửi trong 24 giờ.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 活动二：推广奖励（折叠） -->
+  <!-- CHƯƠNG TRÌNH 2: GIỚI THIỆU -->
   <section id="referral" class="section">
     <div class="section-inner">
-      <h2 class="section-title">活动二：推广奖励</h2>
-      <p class="section-sub">整月有效 · 系统自动记录。该活动为平台内部激励，不构成任何金融承诺。</p>
+      <h2 class="section-title">Chương trình 2: Thưởng giới thiệu</h2>
+      <p class="section-sub">Áp dụng cả tháng · Hệ thống tự ghi nhận. Đây là ưu đãi nội bộ, không phải cam kết tài chính.</p>
 
       <div class="accordion">
         <details>
-          <summary>展开查看：推广奖励规则与说明</summary>
+          <summary>Xem chi tiết: Quy tắc & ghi nhận</summary>
           <div class="body">
-            <p style="margin:0 0 10px">成功推荐后，你可获得（按系统规则折算为平台内部奖励）：</p>
+            <p style="margin:0 0 10px">Giới thiệu thành công, bạn có thể nhận thưởng (quy đổi theo quy tắc hệ thống):</p>
             <ul class="list" style="margin-top:0">
-              <li>推荐 1 位 <b>VIP 卡付费会员</b>：可享受该用户消费金额的 <b>30%</b> 推荐奖励</li>
-              <li>推荐 1 位 <b>徽章会员</b>：可享受该用户投资徽章金额的 <b>3%</b> 推广奖励</li>
+              <li>Giới thiệu <b>VIP</b>: nhận thưởng tương đương <b>30%</b> chi tiêu của người được giới thiệu</li>
+              <li>Giới thiệu <b>Huy hiệu</b>: nhận thưởng tương đương <b>3%</b> giá trị mua huy hiệu</li>
             </ul>
-            <p style="margin:10px 0 0">推荐与奖励由系统自动记录与计算；若需核对或出现异常，请通过站内客服进行处理。</p>
+            <p style="margin:10px 0 0">Tất cả ghi nhận và tính toán tự động. Nếu cần đối soát, vui lòng liên hệ CSKH trong hệ thống.</p>
           </div>
         </details>
       </div>
@@ -348,42 +325,38 @@
   <!-- FAQ -->
   <section class="section">
     <div class="section-inner">
-      <h2 class="section-title">常见问题（FAQ）</h2>
+      <h2 class="section-title">Câu hỏi thường gặp (FAQ)</h2>
       <div class="accordion">
         <details>
-          <summary>注册账号需要付费吗？</summary>
-          <div class="body">注册与浏览基础内容不需要付费；本次礼品活动为会员福利，仅对徽章会员或 VIP（月/季/年）开放。</div>
+          <summary>Đăng ký tài khoản có mất phí không?</summary>
+          <div class="body">Đăng ký tài khoản miễn phí. Chương trình quà tặng là ưu đãi dành riêng cho Thành viên Huy hiệu hoặc VIP (tháng/quý/năm).</div>
         </details>
         <details>
-          <summary>怎么领取礼品？入口在哪？</summary>
-          <div class="body">进入官网登录后，在站内点击「联系客服」提交领取申请，并按客服要求填写收货信息，审核通过后24小时内安排邮寄。</div>
+          <summary>Nhận quà như thế nào? Vào đâu để nhận?</summary>
+          <div class="body">Sau khi đăng nhập, nhấn nút “Liên hệ CSKH” trong hệ thống để đăng ký nhận quà và cung cấp thông tin nhận hàng theo hướng dẫn.</div>
         </details>
         <details>
-          <summary>审核和发货要多久？</summary>
-          <div class="body">审核周期为 24 小时内；审核通过后安排邮寄，物流时效以收货地区为准。</div>
+          <summary>Bao lâu thì duyệt và gửi hàng?</summary>
+          <div class="body">Thời gian duyệt trong 24 giờ. Duyệt xong sẽ sắp xếp gửi hàng trong 24 giờ (thời gian vận chuyển tùy khu vực).</div>
         </details>
         <details>
-          <summary>领取失败怎么办？</summary>
-          <div class="body">领取失败原因请直接咨询站内客服（包括资格异常、名额已满、风控命中等）。</div>
+          <summary>Nếu không nhận được quà thì sao?</summary>
+          <div class="body">Vui lòng liên hệ CSKH trong hệ thống để được kiểm tra (điều kiện, hết suất, hoặc các trường hợp kiểm soát rủi ro).</div>
         </details>
       </div>
     </div>
   </section>
 
   <footer class="footer">
-    <img src="assets/nodeshort-logo.png" alt="NodeShort" width="44" height="44" style="display:block" />
-    <p>© 2026 NodeShort. 会员福利活动页 · 礼品与奖励仅限平台内部使用 · 不构成任何金融承诺</p>
+    <img src="assets/nodeshort-wordmark.png" alt="NodeShort" style="height:24px;width:auto" />
+    <p>© 2026 NodeShort · Ưu đãi nội bộ · Không phải cam kết tài chính</p>
   </footer>
 
-  <a id="cta-floating" href="https://nodeshort.com/pages/register?code=2162846" target="_blank" rel="noopener noreferrer" onclick="trackCTA('floating_primary')">⚡ 立即进入领取</a>
+  <a id="cta-floating" href="https://nodeshort.com/pages/register?code=2162846" target="_blank" rel="noopener noreferrer" onclick="trackCTA('floating_primary')">⚡ Nhận quà ngay</a>
 
   <script>
-    // ===== 可配置项 =====
-    // 1) 活动结束时间：2026-01-31 23:59（按亚洲/金边时区 +07:00）
+    // Kết thúc chương trình: 23:59 31/01/2026 (GMT+7 – Việt Nam)
     const END_AT = new Date('2026-01-31T23:59:59+07:00').getTime();
-
-    // 2) Zalo 群链接：上线前替换为你的真实 Zalo 群邀请链接
-    // 注意：若用 zlnk:// 或 zalo:// 之类 schema，部分浏览器会拦截；建议优先用 https 分享链接。
 
     function pad(n){return String(n).padStart(2,'0');}
 
@@ -403,7 +376,6 @@
       document.getElementById('s').textContent = pad(s);
     }
 
-    // 统一 CTA 埋点：所有点击都走同一事件名，方便广告平台归因与优化
     function trackCTA(source){
       try{
         if(window.fbq){
